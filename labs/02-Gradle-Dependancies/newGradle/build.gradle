@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    mainClass = 'org.example.Main' // Replace with your actual main class path
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.commons:commons-lang3:3.13.0' // Adjust version if necessary
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+
