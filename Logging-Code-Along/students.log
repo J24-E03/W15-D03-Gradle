@@ -1,0 +1,6 @@
+Jan 22, 2025 11:38:49 AM com.omar.StudentManagementSystem addStudent
+INFO: Student with name Aron added to management system
+Jan 22, 2025 11:38:49 AM com.omar.StudentManagementSystem removeStudent
+INFO: Student Removed
+Jan 22, 2025 11:38:49 AM com.omar.StudentManagementSystem getStudentCount
+FINE: Fetching all students count...
