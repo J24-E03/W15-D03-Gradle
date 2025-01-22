@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+//rootProject.name  = "intro.to.gradle"
+
+group = 'com.omar'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.11.0'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.24.3'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.15.2'
+
+}
+
+//publishing {
+//    publications {
+//        mavenJava(MavenPublication) {
+//            from components.java // Publish the Java component (e.g., JAR)
+//
+//
+//            groupId = 'com.bigOmar'       // Replace with your group ID
+//            artifactId = 'my-artifact'    // Replace with your artifact ID
+//            version = '1.0-SNAPSHOT'             // Replace with your version
+//        }
+//    }
+//
+//
+//    repositories {
+//        mavenLocal() // Publishes to ~/.m2/repository
+//    }
+//}
+
+
+
+
+tasks.register("hasan"){
+    doLast {
+        System.out.println("Hello world!");
+    }
+}
+
+
+test {
+    useJUnitPlatform()
+}
